@@ -1,10 +1,12 @@
-<html>
-<head>
-<title>Cyber Dhani</title>
-</head>
-<body>
-<center>
-<h2>Chandra Orangnya batu bangat</h2>
-</center>
-</body>
-</html>
+---
+layout: default
+---
+
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+    </li>
+    {% endfor %}
+</ul>
